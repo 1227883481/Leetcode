@@ -1,22 +1,12 @@
 package offer;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-import java.nio.channels.Pipe;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
-
 /**
  * @author wgl
  * @create 2021-06-08 10:46
  */
-public class offer041 {
+public class offer041Test {
     public static void main(String[] args) {
-        offer041 offer041 = new offer041();
+        offer041Test offer041 = new offer041Test();
         offer041.method6(new test() {
             @Override
             public int method2(int x, int y) {
