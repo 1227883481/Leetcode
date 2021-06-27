@@ -29,7 +29,6 @@ public class lc452 {
                 note[0] = points[i][0];
             }
         }
-        int res = count;
         return count;
     }
 }
