@@ -30,7 +30,6 @@ public class lc452 {
             }
         }
         count++;
-        count--;
         return count;
     }
 }
