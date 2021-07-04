@@ -11,5 +11,6 @@ public class Test3 {
     public static void main(String[] args) {
         Collection<String> coll = new HashSet<>();
         coll.add("a");
+        coll.add("a");
     }
 }
