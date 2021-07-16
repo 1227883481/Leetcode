@@ -35,6 +35,5 @@ public class hot236 {
             return 3;
         }
         return count;
-        HashMap
     }
 }
