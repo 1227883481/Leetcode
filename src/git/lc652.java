@@ -34,6 +34,7 @@ public class lc652 {
         } else {
             map.put(s3, 1);
         }
+        int i;
         return s3;
 
     }
