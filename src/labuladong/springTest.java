@@ -1,6 +1,6 @@
 package labuladong;
-import proxy.UserService;
-import proxy.UserServiceImpl;
+//import proxy.UserService;
+//import proxy.UserServiceImpl;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
@@ -9,5 +9,5 @@ import java.lang.reflect.Proxy;
  * @create 2021-07-27 15:21
  */
 public class springTest {
-    UserService proxy = (UserService) Proxy.newProxyInstance(classLoader, interfaces, logHandler);
+//    UserService proxy = (UserService) Proxy.newProxyInstance(classLoader, interfaces, logHandler);
 }
