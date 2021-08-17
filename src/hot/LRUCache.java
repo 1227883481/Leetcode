@@ -2,6 +2,7 @@ package hot;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -20,6 +21,7 @@ public class LRUCache {
 
 
     public static void main(String[] args) {
+//        LinkedHashMap
         LRUCache lruCache = new LRUCache(2);
         lruCache.put(2,1);
         lruCache.put(1,1);
