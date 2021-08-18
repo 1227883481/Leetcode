@@ -31,7 +31,7 @@ public class lc279 {
                 }
             }
         }
-        int mod = (int) (Math.pow(10, 9) + 7);
+//        int mod = (int) (Math.pow(10, 9) + 7);
         return dp[count][n];
     }
 }
