@@ -23,6 +23,13 @@ public class ThreadPool {
             System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
 
         }
+        ClassLoader myClassLoader = new ClassLoader() {
+
+
+
+        };
 
     }
 }
+
+
