@@ -6,7 +6,8 @@ package hot;
  */
 public class hot43 {
     public static void main(String[] args) {
-
+        hot43 hot43 = new hot43();
+        hot43.multiply("256", "3");
     }
     public String multiply(String num1, String num2) {
         String res = "";
