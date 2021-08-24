@@ -11,6 +11,10 @@ public class SortTest {
     Random random = new Random();
     public static void main(String[] args) {
 
+        int sizeOfNums = 20; //数组长度
+        int rangeOfNums = 20; //数组中随机数的范围
+        boolean needPrint = true; //要不要打印
+
         SortTest sortTest = new SortTest();
         //定义一个乱序数组
         Random rand = new Random();
@@ -22,7 +26,9 @@ public class SortTest {
         }
 
         System.out.println("排序前："); //输出结果
-        System.out.println(Arrays.toString(arr));
+        if (needPrint) {
+            System.out.println(Arrays.toString(arr));
+        }
 
 
         long startTime = System.currentTimeMillis();
@@ -41,7 +47,9 @@ public class SortTest {
 
 
         System.out.println("排序后："); //输出结果
-        System.out.println(Arrays.toString(arr));
+        if (needPrint) {
+            System.out.println(Arrays.toString(arr));
+        }
 
         long totalTime = endTime - startTime;
         System.out.println("用时" + totalTime + "ms");
