@@ -12,7 +12,7 @@ public class myTest {
     public static void main(String[] args) {
 
         int sizeOfNums = 20; //数组长度
-        int rangeOfNums = 20; //数组中随机数的范围
+        int rangeOfNums = 200; //数组中随机数的范围
         boolean needPrint = true; //要不要打印
 
         myTest sortTest = new myTest();
@@ -38,7 +38,7 @@ public class myTest {
 //        sortTest.selectSort(arr); //选择排序
 //        sortTest.insertSort(arr); //插入排序
 //        sortTest.quickOne(arr, 0, arr.length - 1); //快排-单路
-        sortTest.mergeSort(arr); //快排-双路
+        sortTest.heapSort(arr); //快排-双路
 //        sortTest.quickThree(arr, 0, arr.length - 1); //快排-三路
 //        sortTest.mergeSortIter(arr, 0, arr.length - 1); //归并-迭代写法
 //        sortTest.mergeSort(arr, 0, arr.length - 1); //归并-递归写法
@@ -128,5 +128,37 @@ public class myTest {
         arr[j] = temp;
     }
 
+    //堆排序默写
+    public void heapSort(int[] arr) {
+        int len = arr.length;
+        for (int i = (len - 1 - 1)/2; i >= 0; i--) {
+            adjestHeap(arr, i, len - 1);
+        }
+        for (int i = len - 1; i > 0; i--) {
+            swap(arr, 0, i);
+            adjestHeap(arr, 0, i - 1);
+        }
+    }
+    public void adjestHeap(int[] arr, int start, int end) {
+        int left = 2 * start + 1;
+        int right = 2 * start + 2;
+        int maxIndex;
+        while (left <= end) {
+
+            if (right <= end && arr[right] > arr[left]) {
+                maxIndex = right;
+            } else {
+                maxIndex = left;
+            }
+            if (arr[maxIndex] > arr[start]) {
+                swap(arr, maxIndex, start);
+            } else {
+                break;
+            }
+            left = 2 * maxIndex + 1;
+            right = 2 * maxIndex + 2;
+            start = maxIndex;
+        }
+    }
 
 }
