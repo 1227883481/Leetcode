@@ -1,4 +1,4 @@
-package experience.dynamicProxy;
+package experience;
 
 import java.util.HashMap;
 import java.util.Map;
