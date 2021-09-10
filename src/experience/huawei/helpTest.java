@@ -27,13 +27,7 @@ public class helpTest {
             if (scanString == null|| scanString.length() == 0 || scanString.equals(" ")) {
                 break;
             }
-//            System.out.println(scan.nextLine());
-//            String[] myScan = scanString.split(",");
-//            for (int i = 1; i < myScan.length; i++) {
-//                List<String> list1 = depend.getOrDefault(myScan[0], new ArrayList<>());
-//                list1.add(myScan[i]);
-//                depend.put(myScan[0], list1);
-//            }
+
         }
 
         Map<String, Integer> flag = new HashMap<>();
