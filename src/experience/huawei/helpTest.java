@@ -29,7 +29,6 @@ public class helpTest {
             }
 
         }
-        StringBuilder
         Map<String, Integer> flag = new HashMap<>();
         helpTest helpTest = new helpTest();
         int res = helpTest.help(obj, depend, flag);
