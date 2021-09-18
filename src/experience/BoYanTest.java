@@ -11,13 +11,10 @@ import java.util.HashSet;
  * @create 2021-09-18 10:42
  */
 public class BoYanTest {
-
     public static void main(String[] args) {
         String str = new String("abc");
         strProcess(str);
         System.out.println(str);
-
-
     }
     public static int Test111(int i) {
         int res = 0;
@@ -36,6 +33,4 @@ public class BoYanTest {
         System.out.println(str.toUpperCase());
         return str;
     }
-
-
 }
