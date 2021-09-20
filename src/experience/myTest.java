@@ -12,7 +12,6 @@ public class myTest {
     public static void main(String[] args) {
 //        System.out.println(Integer.MIN_VALUE);
         int[] nums = new int[]{-2,1,-3,4,-1,2,1,-5,4};
-        System.out.println();
         myTest myTest = new myTest();
         System.out.println(myTest.maxSubArray(nums));
 
