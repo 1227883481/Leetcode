@@ -1,6 +1,7 @@
 package offer;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @author wgl
@@ -11,7 +12,6 @@ public class offer058 {
         offer058 offer058 = new offer058();
 //        offer058.reverseWords(" hello   world!     ");
         offer058.reverseLeftWords("abcdefg", 2);
-
     }
     public String reverseWords(String s) {
         StringBuilder str = new StringBuilder();
@@ -29,6 +29,7 @@ public class offer058 {
                 }
             }
         }
+        int i = 0;
         return str.toString();
     }
 
